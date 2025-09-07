@@ -1,10 +1,10 @@
+import Acouncement from "@/component/HomePage/Acouncement";
+import Footer from "@/component/HomePage/Footer";
+import Navbar from "@/component/HomePage/Navbar";
+import NavLinks from "@/component/HomePage/NavLinks";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Acouncement from "@/component/HomePage/Acouncement";
-import Navbar from "@/component/HomePage/Navbar";
-import NavLinks from "@/component/HomePage/NavLinks";
-import Footer from "@/component/HomePage/Footer";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

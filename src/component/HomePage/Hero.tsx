@@ -50,15 +50,15 @@ export default function Hero() {
                 >
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="flex flex-col-reverse md:flex-row items-center justify-between  px-5 py-5 md:px-14 rounded-xl w-full h-[320px] md:h-[380px]">
+                            <div className="flex flex-col-reverse md:flex-row items-center justify-between  px-5 py-5 md:px-14 rounded-xl w-full md:h-[380px]">
                                 {/* Left Content */}
                                 <div className="md:pl-8 mt-10 md:mt-0 text-center md:text-left">
-                                    <p className="md:text-base text-orange-600 pb-1">{slide.offer}</p>
+                                    <p className="md:text-base text-[#14a085] pb-1">{slide.offer}</p>
                                     <h1 className="max-w-lg md:text-[40px] md:leading-[48px] text-2xl font-semibold">
                                         {slide.title}
                                     </h1>
                                     <div className="flex items-center mt-4 md:mt-6 justify-center md:justify-start">
-                                        <button className="md:px-10 px-7 md:py-2.5 py-2 bg-orange-600 rounded-full text-white font-medium">
+                                        <button className="md:px-10 px-7 md:py-2.5 py-2 bg-[#14a085] rounded-full text-white font-medium">
                                             Buy now
                                         </button>
                                         <button className="group flex items-center gap-2 px-6 py-2.5 font-medium">
@@ -72,9 +72,9 @@ export default function Hero() {
                                 <div className="flex items-center flex-1 justify-center">
                                     <Image
                                         alt={slide.title}
-                                        width={852}
-                                        height={852}
-                                        className="md:w-72 w-48 object-cover"
+                                        width={380}
+                                        height={380}
+                                        className="object-contain"
                                         src={slide.img.src}
                                     />
                                 </div>

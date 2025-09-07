@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className="flex flex-col space-y-10">
         <div>
-          <h2 className="mb-5 text-[28px] font-mdeium text-black border-b border-[#14a085]">
+          <h2 className="mb-5 text-[28px] font-medium text-black border-b border-[#14a085]">
             Endodontics
           </h2>
 
@@ -42,7 +42,7 @@ export default function Home() {
           </Swiper>
         </div>
         <div>
-          <h2 className="mb-5 text-[28px] font-mdeium text-black border-b border-[#14a085]">
+          <h2 className="mb-5 text-[28px] font-medium text-black border-b border-[#14a085]">
           Disposables
           </h2>
 
@@ -68,7 +68,7 @@ export default function Home() {
           </Swiper>
         </div>
         <div>
-          <h2 className="mb-5 text-[28px] font-mdeium text-black border-b border-[#14a085]">
+          <h2 className="mb-5 text-[28px] font-medium text-black border-b border-[#14a085]">
           Periodontics
           </h2>
 
@@ -94,7 +94,7 @@ export default function Home() {
           </Swiper>
         </div>
         <div>
-          <h2 className="mb-5 text-[28px] font-mdeium text-black border-b border-[#14a085]">
+          <h2 className="mb-5 text-[28px] font-medium text-black border-b border-[#14a085]">
           Prosthodontics
           </h2>
 

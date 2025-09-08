@@ -17,7 +17,7 @@ export default function NavLinks() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-[1440px] mx-auto">
       <div className="container mx-auto px-5">
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8 py-3">

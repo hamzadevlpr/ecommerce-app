@@ -2,6 +2,7 @@ export const products = [
     {
       "id": "endo-001",
       "title": "ProTaper Gold Rotary Files Assorted",
+      "slug": "protaper-gold-rotary-files-assorted",
       "category": "Endodontics",
       "description": "High-quality rotary files designed for efficient and safe root canal shaping. Offers flexibility and predictable performance.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFyxv6BG3QGAXAw45NciMcYdkC5gEPgYx4CQ&s",
@@ -21,6 +22,7 @@ export const products = [
     {
       "id": "endo-002",
       "title": "Gutta Percha Points Size F2 (100pcs)",
+      "slug": "gutta-percha-points-size-f2-100pcs",
       "category": "Endodontics",
       "description": "Premium gutta percha points for root canal obturation, ensuring tight and reliable sealing.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfkCADnHp70Vk1MQMT1Uso5VVsUQZhJ4ngBw&s",
@@ -40,6 +42,7 @@ export const products = [
     {
       "id": "endo-003",
       "title": "Apex Locator Mini (3rd Gen)",
+      "slug": "apex-locator-mini-3rd-gen",
       "category": "Endodontics",
       "description": "Accurate and compact apex locator for determining working length during root canal therapy.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1MUh3cpVUmYeEg3Xyojs2Hr4Qo1Dy_S7X8A&s",
@@ -59,6 +62,7 @@ export const products = [
     {
       "id": "endo-004",
       "title": "Endodontic K-Files 21mm (Stainless Steel)",
+      "slug": "endodontic-k-files-21mm-stainless-steel",
       "category": "Endodontics",
       "description": "Durable stainless steel K-files for effective canal preparation and shaping.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQpNCzpmBqsaLHtqin4tWydX5YDAlydeJPFA&s",
@@ -78,6 +82,7 @@ export const products = [
     {
       "id": "endo-005",
       "title": "MTA Cement Root Repair Material",
+      "slug": "mta-cement-root-repair-material",
       "category": "Endodontics",
       "description": "Mineral trioxide aggregate for root-end filling and perforation repair.",
       "image": "https://cdn11.bigcommerce.com/s-l4n17q06b5/images/stencil/1280x1280/products/10682/10379/MTA10__42279__69966.1693925630.jpg?c=1",
@@ -97,6 +102,7 @@ export const products = [
     {
       "id": "endo-006",
       "title": "Endo Z Bur (Pack of 6)",
+      "slug": "endo-z-bur-pack-of-6",
       "category": "Endodontics",
       "description": "High precision burs for safe and effective endodontic access opening.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ77LARVeZjYA_q7FTk8gCKcIwBd68StqgDBw&s",
@@ -116,6 +122,7 @@ export const products = [
     {
       "id": "endo-007",
       "title": "Irrigation Needles Side-Vented (50pcs)",
+      "slug": "irrigation-needles-side-vented-50pcs",
       "category": "Endodontics",
       "description": "Sterile side-vented irrigation needles for safe canal irrigation.",
       "image": "https://ae01.alicdn.com/kf/S5411869f791c4124872a09c4cf069a80r.jpg",
@@ -135,6 +142,7 @@ export const products = [
     {
       "id": "endo-008",
       "title": "Calcium Hydroxide Paste Syringe",
+      "slug": "calcium-hydroxide-paste-syringe",
       "category": "Endodontics",
       "description": "Ready-to-use calcium hydroxide paste for intracanal dressing.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vrnu69loG6vLlPcjsEQKkTVO21cDpMCeWQ&s",
@@ -154,6 +162,7 @@ export const products = [
     {
       "id": "endo-009",
       "title": "Paper Points Absorbent (200pcs)",
+      "slug": "paper-points-absorbent-200pcs",
       "category": "Endodontics",
       "description": "Highly absorbent paper points for drying root canals effectively.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYFog5cQdQEQlxdc8FRgvXCmBNc6XkJXxOSg&s",
@@ -173,6 +182,7 @@ export const products = [
     {
       "id": "endo-010",
       "title": "Endo Motor with Apex Locator",
+      "slug": "endo-motor-with-apex-locator",
       "category": "Endodontics",
       "description": "Advanced cordless endo motor with integrated apex locator for precision canal preparation.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ37S7iE8ep7abs0Kr4wnZMp447650M4-h9w&s",
@@ -192,6 +202,7 @@ export const products = [
     {
         "id": "disp-001",
         "title": "Nitrile Examination Gloves (Latex-Free, 100pcs)",
+        "slug": "nitrile-examination-gloves-latex-free-100pcs",
         "category": "Disposables",
         "description": "High-quality, powder-free nitrile gloves offering excellent protection and tactile sensitivity.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/nitrile-gloves.png",
@@ -211,6 +222,7 @@ export const products = [
       {
         "id": "disp-002",
         "title": "3-Ply Surgical Face Masks (50pcs Box)",
+        "slug": "3-ply-surgical-face-masks-50pcs-box",
         "category": "Disposables",
         "description": "Disposable 3-ply surgical masks providing effective barrier protection in clinical settings.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/surgical-masks.png",
@@ -230,6 +242,7 @@ export const products = [
       {
         "id": "disp-003",
         "title": "Disposable Dental Bibs 2-Ply (200pcs)",
+        "slug": "disposable-dental-bibs-2-ply-200pcs",
         "category": "Disposables",
         "description": "Absorbent 2-ply dental bibs with waterproof backing to protect patients during procedures.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/dental-bibs.png",
@@ -249,6 +262,7 @@ export const products = [
       {
         "id": "disp-004",
         "title": "Contour Tray Covers (100pcs)",
+        "slug": "contour-tray-covers-100pcs",
         "category": "Disposables",
         "description": "Easy-to-fit tray covers that help maintain sterile work surfaces.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/tray-covers.png",
@@ -268,6 +282,7 @@ export const products = [
       {
         "id": "disp-005",
         "title": "Cotton-Tipped Applicators (6\", 1000pcs)",
+        "slug": "cotton-tipped-applicators-6in-1000pcs",
         "category": "Disposables",
         "description": "Versatile applicators for applying medicaments, ideal for endodontic procedures.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/cotton-applicators.png",
@@ -287,6 +302,7 @@ export const products = [
       {
         "id": "disp-006",
         "title": "Saliva Ejectors (100pcs)",
+        "slug": "saliva-ejectors-100pcs",
         "category": "Disposables",
         "description": "Flexible, single-use saliva ejectors to maintain a dry work area during treatment.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/saliva-ejectors.png",
@@ -306,6 +322,7 @@ export const products = [
       {
         "id": "disp-007",
         "title": "Air/Water Syringe Tips (Plastic, 500pcs)",
+        "slug": "air-water-syringe-tips-plastic-500pcs",
         "category": "Disposables",
         "description": "Universal plastic tips compatible with most syringe handpieces.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/syringe-tips.png",
@@ -325,6 +342,7 @@ export const products = [
       {
         "id": "disp-008",
         "title": "Disposable Prophy Angles (100pcs)",
+        "slug": "disposable-prophy-angles-100pcs",
         "category": "Disposables",
         "description": "Pre-angled, single-use prophy angles for polishing and cleaning procedures.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/prophy-angles.png",
@@ -344,6 +362,7 @@ export const products = [
       {
         "id": "disp-009",
         "title": "Sterilization Pouches (200pcs)",
+        "slug": "sterilization-pouches-200pcs",
         "category": "Disposables",
         "description": "Steam-permeable pouches for instrument sterilization and storage.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/steri-pouches.png",
@@ -363,6 +382,7 @@ export const products = [
       {
         "id": "disp-010",
         "title": "Oral Care Swabs (Toothette, 100pcs)",
+        "slug": "oral-care-swabs-toothette-100pcs",
         "category": "Disposables",
         "description": "Soft sponge-tip swabs for gentle oral care and moisture application.",
         "image": "https://ik.imagekit.io/cpnw7c0xpe/Disposables/oral-swabs.png",

@@ -1,12 +1,17 @@
+'use client'
 import { Search, User, ShoppingCart, Heart } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import logo from "../../../public/logo.png"
+import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+    const cartItems = useSelector((state: any) => state?.cartSlice?.items?.length);
+    
     return (
         <div className="w-full border-b border-border bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-8">
+            <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-8">
                 {/* Main nav bar */}
                 <div className="flex flex-col md:grid md:grid-cols-3 md:items-center py-4 gap-5">
 
@@ -37,10 +42,17 @@ const Navbar = () => {
                             <User className="w-5 h-5" />
                             <span className="inline text-sm font-medium">LOGIN / SIGNUP</span>
                         </div>
-                        <div className="flex items-center gap-2 cursor-pointer">
+                        <Link href="/my-cart" className="flex items-center gap-2 cursor-pointer">
                             <ShoppingCart className="w-5 h-5" />
                             <span className="inline text-sm font-medium">MY CART</span>
-                        </div>
+                            {
+                                cartItems > 0 && (
+                                    <span className="w-4 h-4 inline-flex items-center justify-center text-[8px] font-bold leading-none text-white bg-[#14a085] rounded-full">
+                                        {cartItems}
+                                    </span>
+                                )
+                            }
+                        </Link>
                     </div>
                 </div>
             </div>

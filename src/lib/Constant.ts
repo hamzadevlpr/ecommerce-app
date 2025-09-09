@@ -1,6 +1,6 @@
 export const products = [
     {
-      "id": "endo-001",
+      "id": 1,
       "title": "ProTaper Gold Rotary Files Assorted",
       "slug": "protaper-gold-rotary-files-assorted",
       "category": "Endodontics",
@@ -20,7 +20,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:00:00Z"
     },
     {
-      "id": "endo-002",
+      "id": 2,
       "title": "Gutta Percha Points Size F2 (100pcs)",
       "slug": "gutta-percha-points-size-f2-100pcs",
       "category": "Endodontics",
@@ -40,7 +40,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:05:00Z"
     },
     {
-      "id": "endo-003",
+      "id": 3,
       "title": "Apex Locator Mini (3rd Gen)",
       "slug": "apex-locator-mini-3rd-gen",
       "category": "Endodontics",
@@ -60,7 +60,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:10:00Z"
     },
     {
-      "id": "endo-004",
+      "id": 4,
       "title": "Endodontic K-Files 21mm (Stainless Steel)",
       "slug": "endodontic-k-files-21mm-stainless-steel",
       "category": "Endodontics",
@@ -80,7 +80,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:15:00Z"
     },
     {
-      "id": "endo-005",
+      "id": 5,
       "title": "MTA Cement Root Repair Material",
       "slug": "mta-cement-root-repair-material",
       "category": "Endodontics",
@@ -100,7 +100,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:20:00Z"
     },
     {
-      "id": "endo-006",
+      "id": 6,
       "title": "Endo Z Bur (Pack of 6)",
       "slug": "endo-z-bur-pack-of-6",
       "category": "Endodontics",
@@ -120,7 +120,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:25:00Z"
     },
     {
-      "id": "endo-007",
+      "id": 7,
       "title": "Irrigation Needles Side-Vented (50pcs)",
       "slug": "irrigation-needles-side-vented-50pcs",
       "category": "Endodontics",
@@ -140,7 +140,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:30:00Z"
     },
     {
-      "id": "endo-008",
+      "id": 8,
       "title": "Calcium Hydroxide Paste Syringe",
       "slug": "calcium-hydroxide-paste-syringe",
       "category": "Endodontics",
@@ -160,7 +160,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:35:00Z"
     },
     {
-      "id": "endo-009",
+      "id": 9,
       "title": "Paper Points Absorbent (200pcs)",
       "slug": "paper-points-absorbent-200pcs",
       "category": "Endodontics",
@@ -180,7 +180,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:40:00Z"
     },
     {
-      "id": "endo-010",
+      "id": 10,
       "title": "Endo Motor with Apex Locator",
       "slug": "endo-motor-with-apex-locator",
       "category": "Endodontics",
@@ -200,7 +200,7 @@ export const products = [
       "updatedAt": "2025-09-07T12:45:00Z"
     },
     {
-        "id": "disp-001",
+        "id": 11,
         "title": "Nitrile Examination Gloves (Latex-Free, 100pcs)",
         "slug": "nitrile-examination-gloves-latex-free-100pcs",
         "category": "Disposables",
@@ -220,7 +220,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:00:00Z"
       },
       {
-        "id": "disp-002",
+        "id": 12,
         "title": "3-Ply Surgical Face Masks (50pcs Box)",
         "slug": "3-ply-surgical-face-masks-50pcs-box",
         "category": "Disposables",
@@ -240,7 +240,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:05:00Z"
       },
       {
-        "id": "disp-003",
+        "id": 13,
         "title": "Disposable Dental Bibs 2-Ply (200pcs)",
         "slug": "disposable-dental-bibs-2-ply-200pcs",
         "category": "Disposables",
@@ -260,7 +260,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:10:00Z"
       },
       {
-        "id": "disp-004",
+        "id": 14,
         "title": "Contour Tray Covers (100pcs)",
         "slug": "contour-tray-covers-100pcs",
         "category": "Disposables",
@@ -280,7 +280,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:15:00Z"
       },
       {
-        "id": "disp-005",
+        "id": 15,
         "title": "Cotton-Tipped Applicators (6\", 1000pcs)",
         "slug": "cotton-tipped-applicators-6in-1000pcs",
         "category": "Disposables",
@@ -300,7 +300,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:20:00Z"
       },
       {
-        "id": "disp-006",
+        "id": 16,
         "title": "Saliva Ejectors (100pcs)",
         "slug": "saliva-ejectors-100pcs",
         "category": "Disposables",
@@ -320,7 +320,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:25:00Z"
       },
       {
-        "id": "disp-007",
+        "id": 17,
         "title": "Air/Water Syringe Tips (Plastic, 500pcs)",
         "slug": "air-water-syringe-tips-plastic-500pcs",
         "category": "Disposables",
@@ -340,7 +340,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:30:00Z"
       },
       {
-        "id": "disp-008",
+        "id": 18,
         "title": "Disposable Prophy Angles (100pcs)",
         "slug": "disposable-prophy-angles-100pcs",
         "category": "Disposables",
@@ -360,7 +360,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:35:00Z"
       },
       {
-        "id": "disp-009",
+        "id": 19,
         "title": "Sterilization Pouches (200pcs)",
         "slug": "sterilization-pouches-200pcs",
         "category": "Disposables",
@@ -380,7 +380,7 @@ export const products = [
         "updatedAt": "2025-09-07T13:40:00Z"
       },
       {
-        "id": "disp-010",
+        "id": 20,
         "title": "Oral Care Swabs (Toothette, 100pcs)",
         "slug": "oral-care-swabs-toothette-100pcs",
         "category": "Disposables",

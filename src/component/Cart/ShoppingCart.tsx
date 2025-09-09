@@ -1,24 +1,29 @@
 "use client";
-import { CartItem, removeFromCart, updateQuantity } from "@/redux/cartSlice";
-import { RootState } from "@reduxjs/toolkit/query";
+import { removeFromCart, updateQuantity } from "@/redux/cartSlice";
+import type { RootState } from "@/redux/store";
 import { Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import EmptyCart from "../EmptyCart";
+import { ProductType } from "../ProductCard";
 
 export default function ShoppingCart() {
+  const [promo, setPromo] = useState("");
   const router = useRouter();
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cartSlice.items);
-  console.log(cartItems);
-  const [promo, setPromo] = useState("");
   const subtotal = cartItems.reduce(
-    (sum: number, p: CartItem) => sum + p.price * p.quantity,
+    (sum: number, p: ProductType) => sum + p.price * p.quantity,
     0
   );
 
   const handleCheckout = () => {
     router.push('/checkout');
+  }
+
+  if(cartItems.length === 0) {
+    return <EmptyCart />
   }
   return (
     <div className="bg-gray-50 py-10 px-4 sm:px-8">
@@ -36,7 +41,7 @@ export default function ShoppingCart() {
               </tr>
             </thead>
             <tbody>
-              {cartItems.map((p: CartItem) => (
+              {cartItems.map((p: ProductType) => (
                 <tr key={p.id} className="border-b border-gray-800 rounded-lg">
                   <td className="flex items-center gap-4">
                     <img
@@ -96,7 +101,7 @@ export default function ShoppingCart() {
         {/* Order Summary */}
         <div className="bg-white rounded-xl shadow p-6">
           <h2 className="text-lg font-semibold mb-4">Order Summary</h2>
-          {cartItems.map((p: CartItem) => (
+          {cartItems.map((p: ProductType) => (
             <div key={p.id} className="flex justify-between text-sm mb-2">
               <span>{p.title}</span>
               <span>

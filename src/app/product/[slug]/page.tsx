@@ -7,8 +7,8 @@ import Image from "next/image";
 const Product = () => {
   const [images] = useState({
     img1: shoes01,
-    img2: shoes02,
-    img3: shoes03,
+    img2: shoes04,
+    img3: shoes04,
     img4: shoes04,
   });
 
@@ -24,12 +24,10 @@ const Product = () => {
             <Image
               src={activeImg}
               alt="Sneaker"
-              width={600}
-              height={600}
-              className="w-full h-full aspect-square object-cover rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105"
+              width={550}
+              height={550}
+              className="aspect-square object-cover rounded-xl shadow-md transition-transform duration-300"
             />
-            {/* Subtle overlay on hover */}
-            <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-10 bg-black transition" />
           </div>
 
           {/* Thumbnails */}

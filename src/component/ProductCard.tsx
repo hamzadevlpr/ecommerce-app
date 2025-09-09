@@ -1,17 +1,21 @@
 'use client'
 import { addToCart } from '@/redux/cartSlice'
-import { addProduct } from '@/redux/productSlice'
-import { BadgeInfo } from 'lucide-react'
+import { toggleFavorite } from '@/redux/favoriteSlice'
+import { RootState } from '@/redux/store'
+import { BadgeInfo, Heart } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 export interface ProductType {
+  id: number
   title: string
   slug: string
   image: string
   discount?: number
   discountedPrice?: number
   price: number
+  category: string
+  quantity: number
 }
 
 interface PropsType {
@@ -22,9 +26,15 @@ const ProductCard: React.FC<PropsType> = ({ product }) => {
   const { slug, title, image, discount, discountedPrice, price } = product
   const router = useRouter();
   const dispatch = useDispatch();
+  const favorites = useSelector((state: RootState) => state.favoriteSlice.items);
+  const isFavorite = favorites.some((i) => i.id === product.id);
 
   const handleAddToCart = () => {
     dispatch(addToCart(product));
+  }
+
+  const hanleFavorite = () => {
+    dispatch(toggleFavorite(product))
   }
 
   const handleShowProductInfo = () => {
@@ -40,6 +50,13 @@ const ProductCard: React.FC<PropsType> = ({ product }) => {
             -{discount}%
           </span>
         )}
+        <button onClick={hanleFavorite} className="cursor-pointer group absolute top-2 right-1 rounded-md px-2 py-1 text-sm text-[#14a085]">
+          <Heart
+            size={24}
+            className={`stroke-current fill-${isFavorite ? "current" : "transparent"} group-hover:fill-current transition-colors`}
+          />
+        </button>
+
       </div>
 
       <div className="p-2 pt-0">

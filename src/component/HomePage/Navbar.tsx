@@ -5,10 +5,11 @@ import React from "react";
 import logo from "../../../public/logo.png"
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 const Navbar = () => {
-    const cartItems = useSelector((state: any) => state?.cartSlice?.items?.length);
-    
+    const cartItems = useSelector((state: RootState) => state?.cartSlice?.items?.length);
+
     return (
         <div className="w-full border-b border-border bg-white">
             <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-8">
@@ -19,7 +20,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-[#14a085] rounded-lg flex items-center justify-center">
-                           <Image src={logo} alt="logo" width={30} height={30} className="object-contain" />
+                            <Image src={logo} alt="logo" width={30} height={30} className="object-contain" />
                         </div>
                         <div className="text-base sm:text-lg font-bold text-[#14a085]">
                             FAROOQUE DENTAL MART
@@ -38,10 +39,10 @@ const Navbar = () => {
 
                     {/* Right actions */}
                     <div className="flex items-center  lg:justify-end justify-between gap-6">
-                        <div className="flex items-center gap-2 cursor-pointer">
+                        <Link href="/auth/login" className="flex items-center gap-2 cursor-pointer">
                             <User className="w-5 h-5" />
                             <span className="inline text-sm font-medium">LOGIN / SIGNUP</span>
-                        </div>
+                        </Link>
                         <Link href="/my-cart" className="flex items-center gap-2 cursor-pointer">
                             <ShoppingCart className="w-5 h-5" />
                             <span className="inline text-sm font-medium">MY CART</span>
@@ -52,6 +53,9 @@ const Navbar = () => {
                                     </span>
                                 )
                             }
+                        </Link>
+                        <Link href="/favorite" className="flex items-center gap-2 cursor-pointer">
+                            <Heart className="w-5 h-5" />
                         </Link>
                     </div>
                 </div>

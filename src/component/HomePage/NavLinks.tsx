@@ -27,8 +27,8 @@ export default function NavLinks() {
               href="#"
               className="relative text-sm font-medium text-foreground transition-colors duration-200
                          hover:text-[#14a085]
-                         after:absolute after:left-0 after:-top-2 after:w-full
-                         after:border-t-2 after:border-[#14a085] after:scale-x-0
+                         after:absolute after:left-0 after:-bottom-2 after:w-full
+                         after:border-b-2 after:border-[#14a085] after:scale-x-0
                          hover:after:scale-x-100 after:transition-transform after:duration-200
                          after:origin-center"
             >

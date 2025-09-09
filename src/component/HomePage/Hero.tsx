@@ -36,7 +36,7 @@ const slides = [
 export default function Hero() {
 
     return (
-        <div className="max-w-7xl mx-auto flex flex-col-reverse md:grid md:grid-cols-12 gap-6 py-6">
+        <div className="max-w-[1440px] mx-auto flex flex-col-reverse md:grid md:grid-cols-12 gap-6 py-6">
             {/* Sidebar */}
             <SidebarCategories />
 

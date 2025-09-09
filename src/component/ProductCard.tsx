@@ -1,8 +1,13 @@
 'use client'
+import { addToCart } from '@/redux/cartSlice'
+import { addProduct } from '@/redux/productSlice'
 import { BadgeInfo } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { useDispatch } from 'react-redux'
 
 export interface ProductType {
   title: string
+  slug: string
   image: string
   discount?: number
   discountedPrice?: number
@@ -14,14 +19,16 @@ interface PropsType {
 }
 
 const ProductCard: React.FC<PropsType> = ({ product }) => {
-  const { title, image, discount, discountedPrice, price } = product
+  const { slug, title, image, discount, discountedPrice, price } = product
+  const router = useRouter();
+  const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    console.log(`Add ${title} to cart`)
+    dispatch(addToCart(product));
   }
 
   const handleShowProductInfo = () => {
-    console.log(`View details for ${title}`)
+    router.replace(`/product/${slug}`);
   }
 
   return (
@@ -48,14 +55,14 @@ const ProductCard: React.FC<PropsType> = ({ product }) => {
         <div className="flex gap-[10px]">
           <button
             onClick={handleShowProductInfo}
-            className="rounded-md bg-blue-50 p-2 hover:bg-[#e1e2e6] focus:outline-[#e1e2e6]"
+            className="cursor-pointer rounded-md bg-[#d7fdf6] p-2 hover:bg-[#aef5e8] focus:outline-[#e1e2e6]"
             aria-label={`View details of ${title}`}
           >
             <BadgeInfo color="#C9C9C9" />
           </button>
           <button
             onClick={handleAddToCart}
-            className="w-full rounded-md bg-blue-50 py-[6px] font-medium text-[#1C7690] hover:bg-[#e1e2e6] focus:outline-[#e1e2e6]"
+            className="cursor-pointer w-full rounded-md bg-[#d7fdf6] py-[6px] font-medium text-[#14a085] hover:bg-[#aef5e8] focus:outline-[#e1e2e6]"
           >
             Add to cart
           </button>

@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 
 export default function Home() {
   return (
-    <section className="max-w-7xl mx-auto mb-20 px-5">
+    <section className="max-w-[1440px] mx-auto mb-20 px-5">
       <Hero />
 
       <div className="flex flex-col space-y-10">

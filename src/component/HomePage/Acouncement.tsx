@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaPhone } from "react-icons/fa";
 const Acouncement = () => {
     return (
         <div className="w-full bg-[#14a085] text-white">
-            <div className="px-2 max-w-7xl mx-auto flex justify-between items-center py-2">
+            <div className="px-2 max-w-[1440px] mx-auto flex justify-between items-center py-2">
                 <Marquee>
                     <span className="font-medium">Announcement:&nbsp;&nbsp;</span> Go Prepaid and Enjoy Free Shipping on
                     RS 10,000+ Orders (Terms and Conditions Apply). 4% tax will be
